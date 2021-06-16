@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    background-color:lightsteelblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    color:maroon;
+    background-color: dimgray;
+    padding-left: 20px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-right: 1vw;
+    align-items: center;
+}
+
+nav li {
+    margin-left: 10px;
+    border-left: 3px solid;
+    padding-left: 10px;
+    min-width: fit-content;
+
+}
+a {
+    text-decoration: none;
+    font-size: x-large;
+    color: maroon;
+}
+
+a:hover {
+    color: mediumaquamarine;
+    text-shadow:3px 3px 3px mintcream;
+}
+
+header img {
+    margin: 0;
+    width: 100%;
+    height: 40vh;
+}
+
+main {
+    display: grid;
+    grid-template: fit-content 1fr / fit-content 1fr 1fr;
+}
+
+.work {
+    display: flex;
+    flex: 1 1 0;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    justify-content: space-around;
+    border-left: 5px solid black;
+    padding: 0 20px 20px 20px;
+    width: 80vw;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#proj1 {
+    grid-column: 1 / span 4;
+    width: 100%;
+    position: relative;
+    border: 7px outset maroon;
+    border-radius: 45px;
+}
+
+#container {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 20px;
+    position: relative;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.projOther {
+    width: 90%;
+    position: relative;
+    border: 7px outset maroon;
+    border-radius: 45px;
+    z-index: 0;
+}
+
+a img:hover {
+    opacity: 40%;
+}
+
+#proj1Cap {
+    left: 8em;
+}
+
+figcaption {
+    flex: 1 1 0;
+    background-color: slategrey;
+    padding: 10px;
+    width: fit-content;
+    position: relative;
+    left: 6em;
+    z-index: 2;
+}
+
+.contactMe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactInfo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80vw;
+    padding: 0 20px 20px 20px;
+    border-left: 5px solid black;
+}
